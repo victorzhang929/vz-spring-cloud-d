@@ -9,12 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-eureka</artifactId>
+    <artifactId>spring-cloud-config</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>spring-cloud-eureka-server</module>
-        <module>spring-cloud-eureka-client</module>
-        <module>spring-cloud-eureka-ribbon</module>
+        <module>spring-cloud-config-server</module>
+        <module>spring-cloud-config-client</module>
     </modules>
 
 </project>
