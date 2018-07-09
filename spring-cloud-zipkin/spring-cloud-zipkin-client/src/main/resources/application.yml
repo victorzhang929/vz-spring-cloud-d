@@ -1,0 +1,5 @@
+server:
+  port: 8770
+
+spring.zipkin.base-url: http://localhost:8769
+spring.application.name: zipkin-client

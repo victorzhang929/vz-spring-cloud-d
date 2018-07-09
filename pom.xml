@@ -13,6 +13,8 @@
         <module>spring-cloud-feign</module>
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-config</module>
+        <module>sprispring-cloud-zipkin</module>
+        <module>spring-cloud-zipkin</module>
     </modules>
 
     <properties>
