@@ -1,0 +1,13 @@
+server:
+  port: 8759
+
+spring:
+  profiles:
+    active: docker
+eureka:
+  instance:
+    hostname: docker
+    prefer-ip-address: true
+  client:
+    fetch-registry: false
+    register-with-eureka: false
