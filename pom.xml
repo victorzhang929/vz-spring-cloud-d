@@ -19,6 +19,7 @@
         <module>redlock</module>
         <module>distribute-mongodb</module>
         <module>spring-cloud-redis</module>
+        <module>spring-cloud-sleuth</module>
     </modules>
 
     <properties>
