@@ -14,6 +14,10 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class RedLockTest {
 
+    public static void main(String[] args) throws Exception {
+        new RedLockTest().testRedLock();
+    }
+
     @Autowired
     private RedisLocker distributedLocker;
 
