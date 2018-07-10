@@ -1,0 +1,21 @@
+server:
+  port: 8771
+
+spring:
+  application:
+    name: turbine
+security:
+  basic:
+    enabled: false
+
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: eureka-client
+  cluster-name-expression: new String("default")
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
