@@ -1,5 +1,6 @@
 package com.victorzhang.cloud.eureka.client.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,12 @@ public class UserController {
     private String port;
 
     @RequestMapping("/{name}")
+    @HystrixCommand(fallbackMethod = "homeError")
     public String home(@PathVariable("name") String name) {
         return "hi " + name + ",i am form port:" + port;
+    }
+
+    public String homeError(String name) {
+        return "hi " + name + ",i am sorry!";
     }
 }

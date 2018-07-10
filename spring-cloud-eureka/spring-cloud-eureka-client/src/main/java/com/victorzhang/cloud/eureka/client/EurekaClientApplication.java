@@ -3,6 +3,8 @@ package com.victorzhang.cloud.eureka.client;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 /**
  * Eureka客户端App启动中心
@@ -13,6 +15,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+@EnableHystrix
+@EnableHystrixDashboard
 public class EurekaClientApplication {
 
     public static void main(String[] args) {
