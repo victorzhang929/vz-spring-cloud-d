@@ -16,6 +16,7 @@
         <module>spring-cloud-zipkin</module>
         <module>spring-cloud-turbine</module>
         <module>spring-cloud-consul</module>
+        <module>redlock</module>
     </modules>
 
     <properties>
