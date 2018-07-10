@@ -18,6 +18,7 @@
         <module>spring-cloud-consul</module>
         <module>redlock</module>
         <module>distribute-mongodb</module>
+        <module>spring-cloud-redis</module>
     </modules>
 
     <properties>
